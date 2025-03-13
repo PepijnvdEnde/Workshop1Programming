@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 357233884}
   - component: {fileID: 357233883}
   - component: {fileID: 357233887}
-  - component: {fileID: 357233886}
+  - component: {fileID: 357233888}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -322,21 +322,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &357233886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357233882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ad6b4360dbf12844ae53e126163af6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spherePrefab: {fileID: 2142264576345739583, guid: 0d0360995841f904bb07cc403bc3d0d0, type: 3}
-  sphereCount: 5000
-  spawnRadius: 100
 --- !u!114 &357233887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +366,22 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &357233888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357233882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a06d1055ca38ee41be6b40d78b051c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spherePrefab: {fileID: 1421351825817015629, guid: f5add63a9779dd54a953d7016cae6787, type: 3}
+  maxSpheresPerSecond: 10
+  spawnInterval: 1
+  spawnAreaSize: {x: 20, y: 30, z: 20}
 --- !u!1 &401349558
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +503,7 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1001 &1590318792
+--- !u!1001 &1361968759
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -516,15 +517,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3558307445355236071, guid: 38d6f6b6d29cfe94ea70b36dc4ad8d77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.915176
+      value: -110.3
       objectReference: {fileID: 0}
     - target: {fileID: 3558307445355236071, guid: 38d6f6b6d29cfe94ea70b36dc4ad8d77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 73.30384
+      value: -37.8
       objectReference: {fileID: 0}
     - target: {fileID: 3558307445355236071, guid: 38d6f6b6d29cfe94ea70b36dc4ad8d77, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 81.469475
+      value: 53.7
       objectReference: {fileID: 0}
     - target: {fileID: 3558307445355236071, guid: 38d6f6b6d29cfe94ea70b36dc4ad8d77, type: 3}
       propertyPath: m_LocalRotation.w
@@ -566,4 +567,4 @@ SceneRoots:
   - {fileID: 357233885}
   - {fileID: 401349560}
   - {fileID: 39839614}
-  - {fileID: 1590318792}
+  - {fileID: 1361968759}
